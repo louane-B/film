@@ -22,18 +22,18 @@ namespace BibliothequeFilm
             //film1.AjouterActeur(acteur3);
             controleur.AjouterActeur("Eckhart", "Aaron", 1968, 1992, 38, 700000);
 
-            //Console.WriteLine("");
-            //Console.WriteLine("Liste des acteurs...");
-            //Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Liste des acteurs...");
+            Console.WriteLine("");
 
-            //film1.AfficherActeurs();
+            Console.WriteLine(controleur.GetListeActeurs());
 
-            //Console.WriteLine("");
-            //Console.WriteLine("Informations sur le film...");
-            //Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Informations sur le film...");
+            Console.WriteLine("");
 
-            //Console.WriteLine("Le film a " + film1.GetNombreActeur() + " acteur(s).");
-            //Console.WriteLine("Le film a coûté " + film1.CalculerBudget() + "$ en budget d'acteur(s).");
+            Console.WriteLine("Le film a " + controleur.GetNombreActeur() + " acteur(s).");
+            Console.WriteLine("Le film a coûté " + controleur.CalculerBudget() + "$ en budget d'acteur(s).");
             //Console.WriteLine("La moyenne d'âge des acteurs du film est de " + film1.CalculerAgeMoyenActeur() + " an(s).");
 
             Console.ReadKey();
